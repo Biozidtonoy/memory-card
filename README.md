@@ -1,16 +1,80 @@
-# React + Vite
+# Pokémon Memory Card Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A dynamic and interactive memory game built with React where players must click unique Pokémon cards without selecting the same card twice. After every successful click, the cards shuffle randomly, making the game progressively more challenging and testing the player’s memory and concentration.
 
-Currently, two official plugins are available:
+This project was created to practice React fundamentals including component-based architecture, state management, side effects, API fetching, and dynamic rendering.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Fetches real Pokémon data from the PokéAPI
+* Displays Pokémon images and names dynamically
+* Random card shuffling after every valid click
+* Real-time score tracking
+* Best score tracking system
+* Game reset on duplicate card selection
+* Responsive grid-based card layout
+* Interactive hover effects and smooth UI experience
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Built With
+
+* React
+* JavaScript (ES6+)
+* useState Hook
+* useEffect Hook
+* Tailwind CSS
+* PokéAPI
+
+---
+
+## Game Rules
+
+* Click a Pokémon card only once.
+* Every unique click increases your score.
+* The cards shuffle after each successful selection.
+* Clicking the same card twice ends the game.
+* Try to achieve the highest possible score.
+
+---
+
+## What I Learned
+
+Through this project, I practiced and improved my understanding of:
+
+* React functional components
+* State management with useState
+* Side effects using useEffect
+* Fetching and handling API data
+* Async/await and Promise handling
+* Dynamic rendering with map()
+* Event handling in React
+* Array manipulation and shuffle algorithms
+* React rendering flow and component updates
+
+---
+
+## API Used
+
+Pokémon data and images are fetched from the PokéAPI:
+
+[https://pokeapi.co/](https://pokeapi.co/)
+
+---
+
+
+
+## Installation
+
+```bash
+npm install
+npm run dev
+```
+
+---
+
+## Live Demo
+
+Add your deployed project link here.
