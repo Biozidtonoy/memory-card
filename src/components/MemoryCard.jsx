@@ -11,7 +11,7 @@ function MemoryCard() {
       const fetchPokemon = async () => {
         try {
           const response = await fetch(
-            "https://pokeapi.co/api/v2/pokemon?limit=20",
+            "https://pokeapi.co/api/v2/pokemon?limit=25",
           );
 
           const data = await response.json();
@@ -79,25 +79,27 @@ function MemoryCard() {
               </p>
             </div>
           </div>
-          <div className="score">
-            <div className="userScore">
-              <p className="text-2xl">Score : {currentScore}</p>
-            </div>
-            <div className="bestScore">
-              <p className="text-2xl">Best Score : {bestScore}</p>
-            </div>
-          </div>
         </div>
       </header>
+      <div className="scoreWrapper flex justify-center my-5 mx-0 sticky top-2 z-50">
+            <div className="score ">
+              <div className="userScore">
+                <p className="text-2xl">Score : {currentScore}</p>
+              </div>
+              <div className="bestScore">
+                <p className="text-2xl">Best Score : {bestScore}</p>
+              </div>
+            </div>
+          </div>
       <main>
-        <section className="sectionCards grid grid-cols-4 gap-4">
+        <section className="sectionCards grid grid-cols-6 gap-4">
                 {pokemonCard.map((poke) => (
-                <div className="bg-amber-50  border-2 p-4 rounded-xl shadow-md hover:scale-105 duration-200" key={poke.id} onClick={()=> handleClick(poke.id)}>
-                    <div className="imgBox flex justify-center">
+                <div className="bg-amber-50  rounded-xl shadow-md hover:scale-105 duration-200 " key={poke.id} onClick={()=> handleClick(poke.id)}>
+                    <div className="imgBox flex justify-center ">
                         <img src={poke.image} alt={poke.name} />
                     </div>
                     <div className="nameBox text-center ">
-                        <h2 className="text-xl font-bold ">{poke.name}</h2>
+                        <h2 className="font-bold overflow-hidden">{poke.name}</h2>
                     </div>
                 </div>
              ))}
