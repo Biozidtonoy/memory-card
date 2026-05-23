@@ -79,6 +79,6 @@ npm run dev
 
 Add your deployed project link here.
 
-[https://memory-card-game-application.netlify.app/](https://memory-card-game-application.netlify.app/)
+[https://memory-card-six-lac.vercel.app/](https://memory-card-six-lac.vercel.app/)
 ---
 
