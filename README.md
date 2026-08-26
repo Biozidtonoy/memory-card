@@ -6,7 +6,7 @@ This project was created to practice React fundamentals including component-base
 
 ---
 
-## Features
+## Features that have in this project
 
 * Fetches real Pokémon data from the PokéAPI
 * Displays Pokémon images and names dynamically
